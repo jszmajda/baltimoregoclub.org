@@ -11,6 +11,6 @@
     "jstransformer-marked": "1.x",
     "lost": "^8.2.1",
     "marked": "0.3.x",
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.13.1"
   }
 }
