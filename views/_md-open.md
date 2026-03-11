@@ -1,8 +1,8 @@
 The GWRM Baltimore Go Club and the Baltimore Country
 Department of Recreation and Parks Proudly Present the
-Forty-Ninth Maryland Open
+Fiftieth Maryland Open
 
-Memorial Day Weekend, May 24 & 25, 2025
+Memorial Day Weekend, May 23 & 24, 2026
 
 _This is a very popular weekend. Make reservations now!_
 
@@ -10,8 +10,8 @@ Prizes in all sections (Dan and Kyu)
 
 Open Section: Even games for championship!
 
-Entrance Fee: $40
-Under 18: $30
+Entrance Fee: $50
+Under 18: $40
 
 *This is an AGA rated event. AGA membership required and available at door. One day memberships available.*
 
