@@ -11,14 +11,15 @@ html
     //-title= _path
     meta(http-equiv='Cache-Control', content='public, max-age=86400')
     title GWRM Baltimore Go Club
-    != css()
+    link(rel="stylesheet" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/css/main.css")
 
   body
     header.container-fluid
       .row.align-items-center
         .col-3.logo.py-1
           a(href="/")
-            img(src='img/gwrm.gif')
+            img(src='/img/gwrm.gif')
         .col
           a(href="/")
             h1.title GWRM Baltimore Go Club
@@ -28,7 +29,5 @@ html
         .sidebar.col-12.col-md-3.col-xl-2
           include _sidebar
 
-        main.col-12.col-md-9.col-xl-8.py-md-3.pl-md-5
+        main.col-12.col-md-9.col-xl-8.py-md-3.ps-md-5
           block content
-
-    != js()

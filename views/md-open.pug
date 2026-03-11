@@ -1,13 +1,13 @@
-extends layout
+extends _includes/layout
 
 block content
   h3 The Maryland Open
   iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSfyrwazR_yZWrwmxQ22JFvaLLUjR3nIujXEcZ4Ti2MiOmZrBg/viewform?embedded=true", width="640", height="1003", frameborder="0", marginheight="0", marginwidth="0") Loading…
-  include:md _md-open.md
+  include:markdown-it _includes/_md-open.md
 
-  include:md _md_drp.md
+  include:markdown-it _includes/_md_drp.md
   
 
   p
 
-  img(src="img/MD-Open-Flyer-2026.png", width="90%")
+  img(src="/img/MD-Open-Flyer-2026.png", width="90%")

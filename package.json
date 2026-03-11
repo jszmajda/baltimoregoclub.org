@@ -2,21 +2,24 @@
   "name": "baltimoregoclub.org",
   "description": "Baltimore Go Club Site",
   "scripts": {
-    "build": "./node_modules/roots/bin/roots compile -e production",
-    "watch": "./node_modules/roots/bin/roots watch",
+    "build:css": "sass assets/css/main.scss public/css/main.css && postcss public/css/main.css -o public/css/main.css --use autoprefixer",
+    "build:html": "eleventy",
+    "build": "npm run build:css && npm run build:html",
+    "watch:css": "sass assets/css/main.scss public/css/main.css --watch",
+    "watch:html": "eleventy --serve",
+    "watch": "npm-run-all --parallel watch:css watch:html",
     "deploy": "rsync -uav public/* jess@loki.ws:/var/www/baltimoregoclub.org/htdocs/"
   },
   "dependencies": {
-    "autoprefixer": "^8.6.5",
-    "bootstrap": "^4.6.2",
-    "coffee-script": "1.x",
-    "css-pipeline": "0.3.x",
-    "jade": "1.x",
-    "js-pipeline": "0.2.x",
-    "jstransformer-marked": "^1.4.0",
-    "lost": "^8.3.1",
-    "marked": "0.3.x",
-    "node-sass": "^4.14.1",
-    "roots": "^5.2.0"
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0",
+    "autoprefixer": "^10.4.0",
+    "jstransformer-markdown-it": "^3.0.0",
+    "npm-run-all2": "^6.0.0",
+    "postcss-cli": "^11.0.0",
+    "pug": "^3.0.0",
+    "sass": "^1.70.0"
   }
 }

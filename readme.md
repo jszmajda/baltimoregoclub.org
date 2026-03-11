@@ -10,10 +10,10 @@ You probably want to change things in `views`. Go in there, edit, send a pull re
 
 - have NVM, then it should use .nvmrc
 - `npm install`
-- `npm run-script watch` or `npm run-script build`
+- `npm run watch` or `npm run build`
 
 
 ### Deploying
 
-- `npm run-script build`
-- `npm run-script deploy`
+- `npm run build`
+- `npm run deploy`
